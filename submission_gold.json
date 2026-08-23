@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.1.0",
+  "profiler_version": "adtc-profiler 0.1.0",
+  "submission": {
+    "team_id": "YOUR_TEAM_ID_HERE",
+    "domain": "agriculture",
+    "language_scope": [
+      "en",
+      "pcm"
+    ],
+    "african_alpha_claim": true,
+    "budget_laptop_claim": true,
+    "submitter": {
+      "name": "Qwen2.5-1.5B-ADTC-Finetuned",
+      "email": "your-email@domain.com",
+      "github_handle": "your-github-username"
+    },
+    "cross_disciplinary_pairing": {
+      "discipline": "agriculture",
+      "load_bearing": true,
+      "description": "Offline agricultural AI advisor for Nigerian farmers, providing crop disease diagnosis, pest management, and farming best practices in English and Pidgin."
+    },
+    "test_prompts": [
+      {
+        "prompt_id": "tp_001",
+        "prompt": "My maize leaves are turning yellow with brown spots. What could be the cause and what should I do?"
+      },
+      {
+        "prompt_id": "tp_002",
+        "prompt": "Wetin be the correct way to plant yam for rainy season? Abeg explain for Nigerian farmer."
+      }
+    ],
+    "model": {
+      "name": "Qwen2.5-1.5B-ADTC-Finetuned",
+      "runtime": "llama.cpp",
+      "quantization": "GGUF Q4_K_M",
+      "parameters_estimate": "1.5B",
+      "packaging": "binary_bundle"
+    }
+  },
+  "environment": {
+    "measured_on": "participant_laptop",
+    "cpu_model": "Intel(R) Core(TM) i5-8365U CPU @ 1.60GHz",
+    "ram_gb": 5.8,
+    "gpu": "none",
+    "os": "Ubuntu 22.04.5 LTS"
+  },
+  "throughput": {
+    "tokens_per_second_generation": 11.35,
+    "first_token_latency_ms": 18096.1,
+    "prompt_tokens": 512,
+    "generated_tokens": 128
+  },
+  "memory": {
+    "peak_rss_mb": 1687.08,
+    "steady_state_rss_mb": 1586.95,
+    "peak_vms_mb": 2143.57
+  },
+  "accuracy": [
+    {
+      "benchmark": "arc_easy",
+      "dataset_version": "lm-eval-harness",
+      "language": "en",
+      "samples": 50,
+      "score": 0.76,
+      "metric": "acc_norm"
+    }
+  ],
+  "cpu_thermal": {
+    "cpu_percent_p99": 53.5,
+    "core_temp_c_peak": null,
+    "throttled": false
+  },
+  "reproducibility": {
+    "git_commit_sha": "63ddc5422404",
+    "docker_image_digest": "unknown",
+    "random_seed": 42
+  },
+  "model_info": {
+    "params_count": 1543714304,
+    "context_length": 32768,
+    "architecture": "qwen2",
+    "claimed_params_estimate": "1.5B",
+    "params_match": true
+  }
+}
