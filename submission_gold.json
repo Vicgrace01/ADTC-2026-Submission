@@ -2,7 +2,7 @@
   "schema_version": "1.1.0",
   "profiler_version": "adtc-profiler 0.1.0",
   "submission": {
-    "team_id": "YOUR_TEAM_ID_HERE",
+    "team_id": "agrigemma",
     "domain": "agriculture",
     "language_scope": [
       "en",
@@ -11,9 +11,9 @@
     "african_alpha_claim": true,
     "budget_laptop_claim": true,
     "submitter": {
-      "name": "Qwen2.5-1.5B-ADTC-Finetuned",
-      "email": "your-email@domain.com",
-      "github_handle": "your-github-username"
+      "name": "Nwaruwe Victor Chukwuebuka",
+      "email": "victornwaruwe@gmail.com",
+      "github_handle": "Vicgrace01"
     },
     "cross_disciplinary_pairing": {
       "discipline": "agriculture",
@@ -31,7 +31,7 @@
       }
     ],
     "model": {
-      "name": "Qwen2.5-1.5B-ADTC-Finetuned",
+      "name": "Aris-gold-1.5B",
       "runtime": "llama.cpp",
       "quantization": "GGUF Q4_K_M",
       "parameters_estimate": "1.5B",
